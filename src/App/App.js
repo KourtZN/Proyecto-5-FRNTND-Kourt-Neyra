@@ -1,10 +1,13 @@
+import {Header} from '../Components/Header/Header'
 import './App.css';
 
 
 function App(props) {
   return (
     <div>
-    <div ></div>
+
+<Header/>
+
     <main >
     {props.children}
     </main>

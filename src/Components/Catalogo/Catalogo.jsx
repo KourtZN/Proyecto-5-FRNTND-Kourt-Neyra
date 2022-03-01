@@ -1,7 +1,9 @@
+import './catalogo.css'
 import React from 'react'
 import { Link } from 'react-router-dom' 
 import axios from 'axios'
 
+let listaProductos = [];
 
 function Catalogo(){
     let [prods, setProds] = React.useState([])
@@ -21,6 +23,7 @@ function Catalogo(){
     },[])
     
     console.log('este es el state',prods)
+    listaProductos = prods
 
 
 
@@ -28,11 +31,13 @@ function Catalogo(){
 
         <div >
             {prods.map( (produc) => {
-                return <div key={produc.name}>
-                    <Link to={`/productdetail/${produc.name}`}>{produc.name}</Link>
+                return <Link className="links" to={`/productdetail/${produc._id}`} key={produc._id}>
+                <div className="productsCard">
+                    
                     <p>Nombre: {produc.name}</p>
-                    <p>Descripcion: {produc.desc}</p>
+                    <p>Desc: {produc.desc}</p>
                     </div>
+                </Link>
 
             })}
     {/*<Link to="/productdetail/carta">carta</Link>
@@ -42,4 +47,4 @@ function Catalogo(){
     </div>
 }
 
-export { Catalogo }
+export { Catalogo, listaProductos }

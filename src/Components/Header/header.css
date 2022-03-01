@@ -1,0 +1,38 @@
+.header{
+    display:flex;
+    width:100%;
+    margin:auto;
+    justify-content:space-between;
+    background-color: black;
+    color:white;
+}
+
+.header a{
+    color: white;
+    height: 110px;
+    line-height: 110px;
+}
+
+.header h1{
+    margin:auto;
+}
+
+
+.navegador{
+    width:30%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+
+}
+
+.header img{
+    height:110px;
+    width:110px;
+    margin: 0 10px;
+  }
+.logoyname{
+    display: flex;
+}
