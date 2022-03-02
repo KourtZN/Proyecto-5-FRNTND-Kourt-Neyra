@@ -1,9 +1,13 @@
 import {Header} from '../Components/Header/Header'
 import './App.css';
 
+//importar provider para context
+import {CarritoProvider} from '../context/CarritoContext'
+
 
 function App(props) {
   return (
+    <CarritoProvider>
     <div>
 
 <Header/>
@@ -12,6 +16,7 @@ function App(props) {
     {props.children}
     </main>
   </div>
+  </CarritoProvider>
   );
 }
 
