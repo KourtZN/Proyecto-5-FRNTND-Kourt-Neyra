@@ -13,6 +13,8 @@ function Header(){
     <nav className="navegador">
     <Link to='/'>Inicio</Link>
     <Link to='/productos'>Productos</Link>
+    <Link to='/carrito'>Carrito</Link>
+    <Link to='/checkout'>Checkout</Link>
     </nav>
   </header>
     

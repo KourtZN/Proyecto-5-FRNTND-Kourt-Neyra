@@ -26,15 +26,9 @@ function Producto(){
       e.preventDefault();
       addCarrito(esteProducto)
       console.log('agregaste al carrito checkout a ', esteProducto);
-      navigate('/');
+      navigate('/carrito');
 
     }    
-    function vaccarr(e) {
-      e.preventDefault();
-      vaciarCarrito()
-      console.log('vaciaste carrito');
- 
-    } 
     
     React.useEffect(() => {
       console.log('carrito actual ', carrito)
@@ -50,7 +44,6 @@ function Producto(){
         <div className="buttons">
         <button className="addtocart" onClick={addCart}>Añadir al Carrito</button>
         <button className="viewcart" onClick={addCartCheck}>Añadir y ver carrito</button>
-        <button className="viewcart" onClick={vaccarr}>Vaciar carrito</button>
         </div>
     </div>
 }
