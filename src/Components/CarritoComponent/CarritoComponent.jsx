@@ -31,9 +31,9 @@ React.useEffect(() => {
 },[carrito])
     
 
-    return <div >
+    return <div className="carritomain">
 
-        <div >
+        <div className="cart">
             {carrito.map( (produc) => {
                 return <div className="productsCard" key={produc.idcarrito}>
                     
@@ -46,10 +46,10 @@ React.useEffect(() => {
             })}
 
         </div> 
-        <div>
-            <p>Total : {total}</p>
-            <button onClick={vaccarr}>Vaciar carrito</button>
-            <button onClick={iraCheckout}>Pagar $ {total}</button>
+        <div className="cartbuttons">
+            <h1>Total: $ {total}</h1>
+            <button onClick={vaccarr} className="vaciarcart">Vaciar carrito</button><br/>
+            <button onClick={iraCheckout} className="iracheck">Pagar $ {total}</button>
             
 
         </div>

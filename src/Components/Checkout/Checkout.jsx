@@ -1,3 +1,4 @@
+import './checkout.css'
 import {PayPalButton} from '../PaypalButton/PaypalButton'
 import React from 'react'
 import {CarritoContext} from '../../context/CarritoContext'
@@ -7,8 +8,8 @@ const Checkout = () => {
 
 
     return(
-        <div>
-            {total}
+        <div className="checkout">
+            <h1>Tu pago será de: $ {total}</h1>
 
             <PayPalButton currency="MXN" amount={total} />
 

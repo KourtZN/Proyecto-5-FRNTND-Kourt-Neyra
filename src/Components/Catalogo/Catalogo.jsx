@@ -28,12 +28,12 @@ function Catalogo(){
 
 
 
-    return <div >
+    return (
 
-        <div >
+        <div className="productCont">
             {prods.map( (produc) => {
                 return <Link className="links" to={`/productdetail/${produc._id}`} key={produc._id}>
-                <div className="productsCard">
+                <div className="productst">
                     
                     <p>Nombre: {produc.name}</p>
                     <p>Desc: {produc.desc}</p>
@@ -41,11 +41,8 @@ function Catalogo(){
                 </Link>
 
             })}
-    {/*<Link to="/productdetail/carta">carta</Link>
-    <Link to="/productdetail/baston">baston</Link>
-        <Link to="/productdetail/sombrero">sombrero</Link>*/}
         </div> 
-    </div>
+    )
 }
 
 export { Catalogo, listaProductos }

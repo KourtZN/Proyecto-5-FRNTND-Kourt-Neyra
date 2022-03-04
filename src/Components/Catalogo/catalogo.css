@@ -1,20 +1,33 @@
-.productContainer{
+.productCont{
+    width:60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.productst{
     border: 1px solid black;
     border-radius: 5px;
-    width: 70%;
-    margin:10px auto;
-    display: flex;
-}
-.productsCard{
-    border: 1px solid red;
-    border-radius: 5px;
     padding: 5px;
-    width:68%;
-    margin:10px;
+    width:100%;
+    margin:10px auto;
+}
+.productst:hover{
+    border: 2px solid blue;
+    color: blue;
 }
 .links{
     text-decoration: none;
+    width:45%;
+    padding: 10px;
 }
 .links:hover{
-color: red;
+color: blue;
 }
+
+
+/*media*/
+@media (max-width: 800px) {
+    .productCont{
+      display: block;
+    }
+  }

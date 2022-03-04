@@ -7,6 +7,7 @@ import {Producto} from '../Components/Producto/Producto'
 import {Catalogo} from '../Components/Catalogo/Catalogo'
 import {CarritoComponent} from '../Components/CarritoComponent/CarritoComponent'
 import {Checkout} from '../Components/Checkout/Checkout'
+import {Home} from '../Components/Home/Home'
 
 
 
@@ -19,6 +20,7 @@ function Navigation() {
         <Route path="/productos" element={<Catalogo/>} exact/>
         <Route path="/carrito" element={<CarritoComponent/>} exact/>
         <Route path="/checkout" element={<Checkout/>} exact/>
+        <Route path="/" element={<Home/>} exact/>
 
         </Routes>
 
