@@ -37,6 +37,7 @@ React.useEffect(() => {
             {carrito.map( (produc) => {
                 return <div className="productsCard" key={produc.idcarrito}>
                     
+                    <p className="right">$ {produc.price}</p>
                     <p>Nombre: {produc.name}</p>
                     <p>Desc: {produc.desc}</p>
                     <button onClick={eliminardelCart} name={produc.idcarrito}> Eliminar del carrito </button>

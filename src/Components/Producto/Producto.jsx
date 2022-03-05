@@ -38,7 +38,7 @@ function Producto(){
 
         <div className ="productCard">
         <p>Nombre: {esteProducto.name}</p>
-        <p>Precio: {esteProducto.price}</p>
+        <p>Precio: $ {esteProducto.price}</p>
         <p>Descripción: {esteProducto.desc}</p>
         </div> 
         <div className="buttons">

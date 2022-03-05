@@ -30,7 +30,7 @@ function Catalogo(){
 
     return (
 
-        <div className="productCont">
+        <div className="productContn">
             {prods.map( (produc) => {
                 return <Link className="links" to={`/productdetail/${produc._id}`} key={produc._id}>
                 <div className="productst">
